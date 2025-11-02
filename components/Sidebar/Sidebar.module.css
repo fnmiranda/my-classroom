@@ -6,7 +6,7 @@
   width: 16rem;
   height: 80vh;
   margin: 2.5vh;
-  background-color: #b14826;
+  background-color: darkgray;
   border-radius: 20px;
   padding: 1rem 0;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -45,7 +45,7 @@
 }
 
 .menuItem:hover {
-  background-color: #d25f3f;
+  background-color: darkblue;
   transform: scale(1.05);
   border-radius: 10px;
 }
@@ -55,7 +55,7 @@
 }
 
 .active {
-  background-color: #a33e1e;
+  background-color: blue;
   border-radius: 10px;
 }
 
