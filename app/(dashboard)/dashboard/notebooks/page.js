@@ -2,8 +2,14 @@ import React from 'react'
 import Notebooks from '@/components/Notebooks/Notebooks'
 import Perfil from '../../../../components/Perfil/Perfil'
 
+import NotebooksComp from '../../../../components/teste'
+
 export default function NotebooksPage() {
   return (
-    <Perfil />
+    <div>
+
+      <Notebooks />
+      <NotebooksComp />
+    </div>
   )
 }

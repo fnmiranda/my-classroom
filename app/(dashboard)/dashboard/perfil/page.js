@@ -4,7 +4,7 @@ import NotebooksPage from '../../../../components/teste'
 
 export default function PerfilPage() {
   return (
-    <NotebooksPage />
+    <Perfil />
 
   )
 }

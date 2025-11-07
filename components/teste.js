@@ -134,7 +134,7 @@ function Notebook({ title, notes }) {
  * ROOT PAGE
  * Top-level "Notebooks" item can expand to show the list of notebooks.
  */
-export default function NotebooksPage() {
+export default function NotebooksComp() {
   return (
     <main
       style={{
