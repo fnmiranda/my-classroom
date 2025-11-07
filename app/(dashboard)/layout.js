@@ -6,7 +6,7 @@ import { SidebarProvider } from "../../components/Sidebar/SidebarContext";
 export default function RootLayout({ children }) {
   return (
     <SidebarProvider>
-      <div style={{ display: 'flex', flexDirection: 'row' }}>
+      <div style={{ display: 'flex', flexDirection: 'row', backgroundColor: 'gray' }}>
         <Sidebar />
 
         <div className='flex flex-1 flex-row'>

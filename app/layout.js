@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="pt-br">
-      <body className="vsc-initialized">
+      <body className="vsc-initialized" style={{ backgroundColor: 'gray' }}>
         <div className="h-screen w-full"> {children} </div>
       </body>
     </html>
