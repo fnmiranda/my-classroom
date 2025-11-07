@@ -2,6 +2,7 @@
 import Input from '../../components/Input/input';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import { SidebarProvider } from "../../components/Sidebar/SidebarContext";
+import styles from './styles.css'
 
 export default function RootLayout({ children }) {
   return (
@@ -10,7 +11,7 @@ export default function RootLayout({ children }) {
         <Sidebar />
 
         <div className='flex flex-1 flex-row'>
-          <div>
+          <div style={{ display: 'flex', flexDirection: 'row', gap: '10px', padding: 10 }}>
             Search
             <Input />
           </div>
