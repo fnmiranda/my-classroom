@@ -11,6 +11,7 @@ const Login = () => {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [name, setName] = useState('');
   const router = useRouter();
   const [err_msg, setErrMsg] = useState('');
 
@@ -36,8 +37,10 @@ const Login = () => {
   return (
     <div className={styles.container}>
       <div className={styles.form}>
-        <div className={styles.icons}>
-          <FaNoteSticky />
+        <div className={styles.iconsContent}>
+          <div className={styles.icons}>
+            <FaNoteSticky />
+          </div>
         </div>
         <div className={styles.title}>
 
@@ -46,13 +49,20 @@ const Login = () => {
         <div className={styles.inputBox}>
           <Input
             text="Name"
+            id="email"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+        </div>
+        <div className={styles.inputBox}>
+          <Input
+            text="Email"
             type="email"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            required
           />
-
         </div>
         <div className={styles.inputBox}>
           <Input
@@ -66,8 +76,8 @@ const Login = () => {
           />
         </div>
 
-        <div>
-          <Button id='submit' style={{ width: '35%', marginRight: 10 }} type='submit' onClick={handleSubmit}>
+        <div className={styles.boxBottom}>
+          <Button id='submit' style={{ width: '35%', height: '100%', marginRight: 10 }} type='submit' onClick={handleSubmit}>
             Sign-In
           </Button>
           <span>New here?</span> <Link className={styles.link} href='/dashboard'> Create Account</Link>
